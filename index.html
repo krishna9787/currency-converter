@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="icon" href="" type="image/icon" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form action="javascript:onClick()">
+        <div class="enter-amount">
+          <label for="amount">Enter Amount</label>
+          <input class="amount" type="number" placeholder="Enter Amount" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <label for="from">From</label>
+            <div class="select-container">
+              <img
+                class="from-img"
+                src="https://flagsapi.com/US/flat/64.png"
+                alt="from country"
+              />
+              <select name="from" id="from" class="from">
+                <option value="US Dollar" selected>US Dollar</option>
+                <option value="Indian Rupee">Indian Rupee</option>
+                <option value="Ireland">Tugrik</option>
+                <option value="Rupiah">Rupiah</option>
+              </select>
+            </div>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+          <div class="to">
+            <label for="to">To</label>
+            <div class="select-container">
+              <img
+                class="to-img"
+                src="https://flagsapi.com/IN/flat/64.png"
+                alt="to country"
+              />
+              <select name="to" id="to" class="to">
+                <option value="US Dollar">US Dollar</option>
+                <option value="Indian Rupee" selected>Indian Rupee</option>
+                <option value="Ireland">Tugrik</option>
+                <option value="Rupiah">Rupiah</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1USD=80INR</div>
+        <button>Get Exchange Rate</button>
+        <div class="exchange-message"></div>
+      </form>
+    </div>
+  </body>
+  <script src="./codes.js"></script>
+  <script src="./app.js"></script>
+</html>
